@@ -1,4 +1,5 @@
 /node_modules
-/dist/scripts/*.js
-/dist/scripts/*.map
-/dist/scripts/*.txt
+/dist/assets/*
+!/dist/assets/.gitkeep
+/dist/scripts/*
+!/dist/scripts/.gitkeep

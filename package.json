@@ -15,7 +15,6 @@
     "@types/react-router-dom": "^5.1.8",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
-    "file-loader": "^6.2.0",
     "sass": "^1.37.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
