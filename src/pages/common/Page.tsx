@@ -10,7 +10,7 @@ export interface PageProps {
 export default class Page extends React.Component<PageProps> {
     public override render(): React.ReactNode {
         return <>
-            <Header />
+            <Header freePosition />
             <Main>{this.props.children}</Main>
             <Footer />
         </>;

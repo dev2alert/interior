@@ -9,7 +9,7 @@ module.exports = {
         path: path.join(__dirname, "./dist/scripts"),
         filename: "index.js",
         chunkFilename: "[chunkhash].chunk.js",
-        publicPath: "/scripts/",
+        publicPath: "/scripts",
         assetModuleFilename: "../assets/[hash][ext][query]"
     },
     module: {

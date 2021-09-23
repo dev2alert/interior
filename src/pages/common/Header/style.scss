@@ -1,9 +1,55 @@
 .main {
+    display: flex;
+    justify-content: center;
+    padding: 56px 0px;
+    width: 100vw;
+    min-width: 1200px;
+    &:global(.free-position) {
+        position: absolute;
+    }
+    > :global(.container) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1100px;
+    }
+    > :global(.container > .right) {
+        display: flex;
+        align-items: center;
+    }
     :global {
         .logo {
             width: 185px;
             height: 22px;
             background: url("./assets/logo.png");
+        }
+        .nav {
+            display: flex;
+            > .link {
+                display: inline-flex;
+                align-items: center;
+                font: normal 14px "Montserrat Light";
+                padding: 8px 12px;
+                text-decoration: none;
+                color: #8c8c8c;
+                letter-spacing: 0.1em;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.0);
+                &.active {
+                    font-family: "Montserrat Bold";
+                    color: #212121;
+                    border-bottom: 3px solid #331b1b;
+                }
+            }
+        }
+        .search {
+            display: inline-flex;
+            margin-left: 12px;
+            background: url("./assets/search.png");
+            width: 23px;
+            height: 23px;
+            border: none;
+            outline: none;
+            cursor: pointer;
         }
     }
 }

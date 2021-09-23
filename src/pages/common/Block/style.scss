@@ -1,0 +1,17 @@
+.main {
+    :global {
+        .subtitle-green {
+            font-size: 18px;
+            font-family: "Montserrat Bold";
+            color: #43a047;
+            letter-spacing: 0.1em;
+        }
+        .title {
+            font-family: "Montserrat Thin";
+            font-size: 62px;
+            color: #212121;
+            text-transform: uppercase;
+            line-height: 72px;
+        }
+    }
+}

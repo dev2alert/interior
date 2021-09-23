@@ -1,3 +1,26 @@
-.main {
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("./fonts/Montserrat-Light.ttf");
+}
 
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Thin";
+    src: url("./fonts/Montserrat-Thin.ttf");
+}
+
+body {
+    min-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
 }
