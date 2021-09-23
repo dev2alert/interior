@@ -1,8 +1,8 @@
 {
-  "name": "create-react-application",
+  "name": "interior",
   "version": "1.0.0",
-  "description": "This is an empty react application.",
-  "repository": "github:dev2alert/create-react-application",
+  "description": "",
+  "repository": "github:dev2alert/interior",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack serve"
