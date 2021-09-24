@@ -1,5 +1,5 @@
 import * as React from "react";
-import Block from "../../common/Block";
+import Block from "../../common/Main/Block";
 import styles from "./style.scss";
 
 export default class Main extends React.Component {

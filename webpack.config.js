@@ -6,11 +6,15 @@ module.exports = {
     devtool: mode === "development" ? "source-map" : undefined,
     entry: path.join(__dirname, "./src/index.tsx"),
     output: {
-        path: path.join(__dirname, "./dist/scripts"),
+        path: path.join(__dirname, "./dist/assets"),
         filename: "index.js",
         chunkFilename: "[chunkhash].chunk.js",
-        publicPath: "/scripts",
-        assetModuleFilename: "../assets/[hash][ext][query]"
+        assetModuleFilename: "[hash][ext][query]",
+        publicPath: "/assets/"
+    },
+    performance: {
+        maxEntrypointSize: 800000,
+        maxAssetSize: 800000
     },
     module: {
         rules: [
