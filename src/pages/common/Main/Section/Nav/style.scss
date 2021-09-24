@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    :global {
+        .tab {
+            font: normal 36px "Montserrat Bold";
+            color: #6c6c6c;
+            padding: 19px 15px;
+            cursor: pointer;
+            &.active {
+                color: #212121;
+                border-bottom: 2px solid #212121;
+                cursor: default;
+            }
+        }
+    }
+}

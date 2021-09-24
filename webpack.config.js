@@ -45,7 +45,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, "dist")
         },
-        hot: false,
+        hot: true,
         historyApiFallback: true
     }
 };

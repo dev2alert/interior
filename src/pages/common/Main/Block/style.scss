@@ -1,4 +1,9 @@
 .main {
+    > :global(.container) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     :global {
         .subtitle-green {
             font-size: 18px;
@@ -12,6 +17,71 @@
             color: #212121;
             text-transform: uppercase;
             line-height: 72px;
+        }
+        .paragraph {
+            font-family: "Montserrat Light";
+            color: #6c6c6c;
+            width: 480px;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 10px 0px;
+        }
+        .button {
+            display: inline-flex;
+            padding: 16px 31px;
+            border: none;
+            background: white;
+            box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
+            font: normal 18px "Montserrat Bold";
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            border-radius: 27.2px;
+            cursor: pointer;
+            &.next {
+                margin-top: 10px;
+                &:after {
+                    display: inline-flex;
+                    width: 8px;
+                    height: 12px;
+                    margin-left: 19px;
+                    content: url("./assets/button-next.png");
+                }
+            }
+            &.next-background {
+                display: inline-flex;
+                width: 48px;
+                height: 48px;
+                padding: 0px;
+                background-image: url("./assets/button-next-background.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > .dot {
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                background: #c7c7c7;
+                border-radius: 15px;
+                cursor: pointer;
+                &:hover {
+                    background: #494949;
+                }
+                &:not(:first-child) {
+                    margin-left: 10px;
+                }
+                &.active {
+                    background: #212121;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    cursor: default;
+                }
+            }
         }
     }
 }
