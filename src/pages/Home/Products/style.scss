@@ -46,14 +46,24 @@
                 }
                 > .hover {
                     display: none;
+                    height: $image-size;
                     position: absolute;
                     width: $image-size;
                     flex-direction: column;
                     overflow: hidden;
+                    justify-content: center;
                     align-items: center;
-                    padding-top: 62px;
-                    > .title {
-                        font: normal 22px "Montserrat Bold";
+                    border: 1px solid #b1b0b0;
+                    background: rgba(255, 255, 255, 0.8);
+                    > .button {
+                        margin-top: 10px;
+                    }
+                    > .title-bold {
+                        margin-top: 14px;
+                    }
+                    > .paragraph {
+                        width: 220px;
+                        text-align: center;
                     }
                 }
                 > .image {

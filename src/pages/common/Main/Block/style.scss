@@ -1,9 +1,4 @@
 .main {
-    > :global(.container) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
     :global {
         .subtitle-green {
             font-size: 18px;
@@ -13,10 +8,20 @@
         }
         .title {
             font-family: "Montserrat Thin";
-            font-size: 62px;
             color: #212121;
-            text-transform: uppercase;
-            line-height: 72px;
+            &.size-6 {
+                font-size: 62px;
+                text-transform: uppercase;
+                line-height: 72px;
+            }
+        }
+        .title-bold {
+            font-family: "Montserrat Bold";
+            color: #212121;
+            &.size-1 {
+                font-size: 22px;
+                line-height: 29px;
+            }
         }
         .paragraph {
             font-family: "Montserrat Light";
@@ -57,31 +62,31 @@
                 background-position: center;
             }
         }
-        .slider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            > .dot {
-                display: inline-flex;
-                width: 30px;
-                height: 30px;
-                background: #c7c7c7;
-                border-radius: 15px;
-                cursor: pointer;
-                &:hover {
-                    background: #494949;
-                }
-                &:not(:first-child) {
-                    margin-left: 10px;
-                }
-                &.active {
-                    background: #212121;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 20px;
-                    cursor: default;
-                }
-            }
-        }
+        // .slider {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     > .dot {
+        //         display: inline-flex;
+        //         width: 30px;
+        //         height: 30px;
+        //         background: #c7c7c7;
+        //         border-radius: 15px;
+        //         cursor: pointer;
+        //         &:hover {
+        //             background: #494949;
+        //         }
+        //         &:not(:first-child) {
+        //             margin-left: 10px;
+        //         }
+        //         &.active {
+        //             background: #212121;
+        //             width: 40px;
+        //             height: 40px;
+        //             border-radius: 20px;
+        //             cursor: default;
+        //         }
+        //     }
+        // }
     }
 }

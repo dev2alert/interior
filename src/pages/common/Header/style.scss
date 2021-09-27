@@ -4,6 +4,7 @@
     padding: 56px 0px;
     width: 100vw;
     min-width: 1200px;
+    z-index: 10;
     &:global(.free-position) {
         position: absolute;
     }
