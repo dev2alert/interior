@@ -1,0 +1,22 @@
+.main {
+    $block-size: 683px;
+    display: flex;
+    width: $block-size * 2;
+    margin: auto;
+    :global {
+        .block {
+            width: $block-size;
+            height: $block-size;
+            padding: 228px 51px;
+            &.left {
+                background-image: url("./assets/block-left-background.png");
+            }
+            &.right {
+                background-image: url("./assets/block-right-background.png");
+            }
+            > .title-bold {
+                margin-top: 10px;
+            }
+        }
+    }
+}

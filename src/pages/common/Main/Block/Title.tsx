@@ -11,5 +11,5 @@ export default function Title({children, bold = false, size = 6}: TitleProps): R
         bold ? "title-bold" : "title",
         `size-${size}`
     ];
-    return <div className={classList.join(" ")}>{children}</div>;
+    return <h1 className={classList.join(" ")}>{children}</h1>;
 }
