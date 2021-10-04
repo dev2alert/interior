@@ -8,13 +8,19 @@ import Dots from "./Dots";
 
 export interface SliderProps {
     backgroundUrl?: string;
+    backgroundColor?: string;
     children: React.ReactNode;
 }
 
-export default function Slider({backgroundUrl, children}: SliderProps): React.ReactElement {
+export default function Slider({backgroundUrl, backgroundColor, children}: SliderProps): React.ReactElement {
+    const style: any = {};
+    if(backgroundUrl)
+        style["--background"] = `url(${JSON.stringify(backgroundUrl)})`;
+    if(backgroundColor)
+        style["--background-color"] = backgroundColor;
     return <Section 
         className={styles.main} 
-        style={{"--background": backgroundUrl ? `url(${JSON.stringify(backgroundUrl)})` : undefined}}
+        style={style}
     >
         <SlickSlider 
             initialSlide={1}

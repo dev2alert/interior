@@ -4,73 +4,7 @@
         width: 1100px;
         margin: auto;
     }
-    > :global(.container > .top) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    :global {
-        .explore-all {
-            border: none;
-            background: none;
-            font: normal 18px "Montserrat Bold";
-            text-transform: uppercase;
-            color: #212121;
-            letter-spacing: 0.2em;
-            cursor: pointer;
-            &:after {
-                width: 8px;
-                height: 12px;
-                margin-left: 12px;
-                content: url("./assets/explore-all.png");
-                opacity: 0;
-            }
-            &:hover {
-                &:after {
-                    opacity: 1;
-                }
-            }
-        }
-        .list {
-            $image-size: 260px;
-            display: grid;
-            justify-content: space-between;
-            grid-template-columns: repeat(4, $image-size);
-            padding-top: 50px;
-            > .item {
-                cursor: pointer;
-                &:hover {
-                    > .hover {
-                        display: flex;
-                    }
-                }
-                > .hover {
-                    display: none;
-                    height: $image-size;
-                    position: absolute;
-                    width: $image-size;
-                    flex-direction: column;
-                    overflow: hidden;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid #b1b0b0;
-                    background: rgba(255, 255, 255, 0.8);
-                    > .button {
-                        margin-top: 10px;
-                    }
-                    > .title-bold {
-                        margin-top: 14px;
-                    }
-                    > .paragraph {
-                        width: 220px;
-                        text-align: center;
-                    }
-                }
-                > .image {
-                    width: $image-size;
-                    height: $image-size;
-                }
-            }
-        }
+    > :global(.container > .bottom) {
+        margin-top: 50px;
     }
 }

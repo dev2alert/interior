@@ -3,7 +3,7 @@
         .subtitle {
             font-size: 18px;
             font-family: "Montserrat Bold";
-            color: var(--color);
+            color: var(--color, #6c6c6c);
             letter-spacing: 0.1em;
             text-transform: uppercase;
         }
@@ -26,6 +26,7 @@
             &.size-2 {
                 font-size: 36px;
                 line-height: 1.2;
+                margin-top: 10px;
             }
         }
         .paragraph {
@@ -35,6 +36,9 @@
             font-size: 14px;
             line-height: 24px;
             margin: 10px 0px;
+            &.size-2 {
+                font-size: 22px;
+            }
         }
         .button {
             display: inline-flex;

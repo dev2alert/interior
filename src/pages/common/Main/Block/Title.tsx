@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface TitleProps {
-    children: string;
+    children: React.ReactNode;
     bold?: boolean;
     size?: number;
 }

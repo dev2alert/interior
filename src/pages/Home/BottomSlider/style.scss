@@ -1,0 +1,9 @@
+.view {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 19px;
+    & > :global(.container) {
+        width: 1100px;
+    }
+}

@@ -1,15 +1,23 @@
 import * as React from "react";
-import Main from "./Main";
+import TopSlider from "./TopSlider";
 import Page from "../common/Page";
 import Products from "./Products";
-import Exclusive1 from "./Exclusive-1";
+import TopExclusive from "./TopExclusive";
+import TrendingProducts from "./TrendingProducts";
+import BottomSlider from "./BottomSlider";
+import BottomExclusive from "./BottomExclusive";
+import MobileApp from "./MobileApp";
 
 export default class Home extends React.Component {
     public override render(): React.ReactNode {
         return <Page>
-            <Main />
+            <TopSlider />
             <Products />
-            <Exclusive1 />
+            <TopExclusive />
+            <TrendingProducts />
+            <BottomSlider />
+            <BottomExclusive />
+            <MobileApp />
         </Page>;
     }
 } 

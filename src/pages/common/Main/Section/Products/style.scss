@@ -1,0 +1,44 @@
+.main {
+    $columns: var(--columns, 4);
+    $image-size: var(--image-size, 260px);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat($columns, $image-size);
+    row-gap: 22px;
+    :global {
+        .product {
+            cursor: pointer;
+            &:hover {
+                > .hover {
+                    display: flex;
+                }
+            }
+            > .hover {
+                display: none;
+                width: $image-size;
+                height: $image-size;
+                position: absolute;
+                flex-direction: column;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #b1b0b0;
+                background: rgba(255, 255, 255, 0.8);
+                > .button {
+                    margin-top: 10px;
+                }
+                > .title-bold {
+                    margin-top: 14px;
+                }
+                > .paragraph {
+                    width: 220px;
+                    text-align: center;
+                }
+            }
+            > .image {
+                width: $image-size;
+                height: $image-size;
+            }
+        }
+    }
+}

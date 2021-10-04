@@ -8,8 +8,11 @@ export interface SectionProps {
 }
 
 export default function Section({children, className, style}: SectionProps): React.ReactElement {
+    const classList: string[] = [styles.main];
+    if(className)
+        classList.push(className);
     return <section 
-        className={className}
+        className={classList.join(" ")}
         style={style}
     >{children}</section>;
 }

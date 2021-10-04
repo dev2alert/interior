@@ -2,7 +2,8 @@ import * as React from "react";
 
 export enum SubtitleColors {
     GREEN = "#43a047",
-    BLUE = "#1e88e5"
+    BLUE = "#1e88e5",
+    RED = "#e53935"
 }
 
 export interface SubtitleProps {

@@ -1,3 +1,28 @@
 .main {
-    
+    :global {
+        .explore-all {
+            border: none;
+            background: none;
+            font: normal 18px "Montserrat Bold";
+            text-transform: uppercase;
+            color: #212121;
+            letter-spacing: 0.2em;
+            cursor: pointer;
+            &:after {
+                width: 8px;
+                height: 12px;
+                margin-left: 12px;
+                content: url("./assets/explore-all.png");
+                opacity: 0;
+            }
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        .flex {
+            display: flex;
+        }
+    }
 }
