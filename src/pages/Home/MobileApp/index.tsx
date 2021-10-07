@@ -1,4 +1,5 @@
 import * as React from "react";
+import {NavLink} from "react-router-dom";
 import Block from "../../common/Main/Block";
 import P from "../../common/Main/Block/P";
 import Subtitle from "../../common/Main/Block/Subtitle";
@@ -13,8 +14,8 @@ export default function MobileApp(): React.ReactElement {
             <Title>Find. Follow.<br /> Favorite.</Title>
             <P size={2}>Save your favorites and share your style.</P>
             <div className="links">
-                <a className="link app-store" href="#app-store" />
-                <a className="link google-play" href="#google-play" />
+                <NavLink className="link app-store" to="/#app-store" />
+                <NavLink className="link google-play" to="/#google-play" />
             </div>
         </Block>
     </Section>;

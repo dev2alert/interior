@@ -5,7 +5,7 @@
     width: 100%;
     min-width: 1200px;
     z-index: 10;
-    &:global(.free-position) {
+    &:global(.free) {
         position: absolute;
     }
     > :global(.container) {

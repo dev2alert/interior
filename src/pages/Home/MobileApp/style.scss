@@ -22,10 +22,10 @@
             &:not(:first-child) {
                 margin-left: 10px;
             }
-            &[href="#app-store"] {
+            &.app-store {
                 background: url("./assets/app-store.png");
             }
-            &[href="#google-play"] {
+            &.google-play {
                 background: url("./assets/google-play.png");
             }
         }

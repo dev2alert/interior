@@ -2,7 +2,7 @@ import * as React from "react";
 import Column from "./Column";
 import P from "./P";
 import Link from "./Link";
-import Input, { InputTypes } from "./Input";
+import Input, {InputTypes} from "./Input";
 
 export default function Top(): React.ReactElement {
     return <div className="top columns">

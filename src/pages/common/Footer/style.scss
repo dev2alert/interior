@@ -43,7 +43,9 @@
                     overflow: hidden;
                     background: white;
                     padding-left: 19px;
+                    padding-right: 14px;
                     font: normal 14px "Montserrat Light";
+                    margin-top: 20px; 
                     > .container {
                         width: 100%;
                         height: inherit;
@@ -57,10 +59,13 @@
                     > .send {
                         display: inline-flex;
                         background: url("./Top/assets/input-send.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
                         border: none;
                         outline: none;
                         width: 22px;
                         height: 22px;
+                        cursor: pointer;
                     }
                 }
             }

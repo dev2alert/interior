@@ -10,7 +10,7 @@ import MobileApp from "./MobileApp";
 
 export default class Home extends React.Component {
     public override render(): React.ReactNode {
-        return <Page>
+        return <Page title="Home">
             <TopSlider />
             <Products />
             <TopExclusive />
