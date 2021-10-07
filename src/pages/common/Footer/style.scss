@@ -6,6 +6,16 @@
         width: 1100px;
         margin: auto;
     }
+    > :global(.container > .bottom) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 59px;
+        font: normal 12px "Montserrat Bold"; 
+        letter-spacing: 0.05em;
+        color: #6c6c6c;
+        text-transform: uppercase;
+    }
     :global {
         .columns {
             display: flex;
@@ -85,7 +95,31 @@
                 }
             }
             &.touch {
-                width: 400px;
+                width: 370px;
+            }
+        }
+        .social {
+            display: flex;
+            gap: 6px;
+            > .link {
+                display: inline-flex;
+                width: 28px;
+                height: 28px;
+                background-size: 26px;
+                background-position: center;
+                background-repeat: no-repeat;
+                &.facebook {
+                    background-image: url("./Bottom/assets/social-facebook.png");
+                }
+                &.twitter {
+                    background-image: url("./Bottom/assets/social-twitter.png");
+                }
+                &.google-plus {
+                    background-image: url("./Bottom/assets/social-google-plus.png");
+                }
+                &.pinterest {
+                    background-image: url("./Bottom/assets/social-pinterest.png");
+                }
             }
         }
     }
