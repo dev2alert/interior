@@ -8,9 +8,8 @@ export default function Bottom(): React.ReactElement {
         </div>
         <div className="social">
             <Link className="facebook" to="/#facebook" />
-            <Link className="twitter" to="/#twitter" />
-            <Link className="google-plus" to="/#google-plus" />
-            <Link className="pinterest" to="/#pinterest" />
+            <Link className="tiktok" to="/#tiktok" />
+            <Link className="youtube" to="/#youtube" />
         </div>
         <div className="policy">
             Terms & Conditions / Privacy policy & Cookies

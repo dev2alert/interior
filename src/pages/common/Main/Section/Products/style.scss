@@ -9,11 +9,11 @@
         .product {
             cursor: pointer;
             &:hover {
-                > .hover {
+                > .hover > .container {
                     display: flex;
                 }
             }
-            > .hover {
+            > .hover > .container {
                 display: none;
                 width: $image-size;
                 height: $image-size;

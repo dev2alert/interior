@@ -6,7 +6,7 @@ export interface LinkProps {
     to: string;
 }
 
-export default function Link({className, to}: LinkProps): React.ReactElement {
+export default function Link({to, className}: LinkProps): React.ReactElement {
     const classList: string[] = ["link"];
     if(className)
         classList.push(className);

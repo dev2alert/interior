@@ -8,11 +8,15 @@ export interface ITab {
 }
 
 export interface NavProps {
+    className?: string;
     children: ITab[];
 }
 
-export default function Nav({children}: NavProps): React.ReactElement {
-    return <nav className={styles.main}>
+export default function Nav({className, children}: NavProps): React.ReactElement {
+    const classList: string[] = [styles.main];
+    if(className)
+        classList.push(className);
+    return <nav className={classList.join(" ")}>
         {children.map((item, index) => {
             return <NavLink key={index} className="tab" to={item.path} exact>{item.name}</NavLink>;
         })}

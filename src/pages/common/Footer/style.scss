@@ -42,6 +42,10 @@
                     letter-spacing: 0.05em;
                     color: #212121;
                     line-height: 26px;
+                    opacity: 0.8;
+                    &:hover {
+                        opacity: 0.95;
+                    }
                 }
                 .input {
                     display: flex;
@@ -105,20 +109,21 @@
                 display: inline-flex;
                 width: 28px;
                 height: 28px;
+                background-repeat: no-repeat;
                 background-size: 26px;
                 background-position: center;
-                background-repeat: no-repeat;
+                opacity: 0.65;
+                &:hover {
+                    opacity: 0.85;
+                }
                 &.facebook {
                     background-image: url("./Bottom/assets/social-facebook.png");
                 }
-                &.twitter {
-                    background-image: url("./Bottom/assets/social-twitter.png");
+                &.tiktok {
+                    background-image: url("./Bottom/assets/social-tiktok.png");
                 }
-                &.google-plus {
-                    background-image: url("./Bottom/assets/social-google-plus.png");
-                }
-                &.pinterest {
-                    background-image: url("./Bottom/assets/social-pinterest.png");
+                &.youtube {
+                    background-image: url("./Bottom/assets/social-youtube.png");
                 }
             }
         }

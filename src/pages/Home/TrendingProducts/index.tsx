@@ -20,7 +20,7 @@ export default class TrendingProducts extends React.Component {
                     <ExploreAll />
                 </Flex>
                 <div className="bottom">
-                    <Products columns={3} itemSize={350} hover={false}>
+                    <Products columns={3} itemSize={350}>
                         {[
                             "/test/images/product-10.png",
                             "/test/images/product-9.png",
