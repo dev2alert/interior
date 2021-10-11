@@ -5,20 +5,26 @@ import P from "../../Block/P";
 import Title from "../../Block/Title";
 import {NavLink} from "react-router-dom";
 
-export interface ItemProps {
-    hover?: boolean;
-    children: string;
+export interface IProduct {
+    id: number;
+    name: string;
+    description: string;
+    photoUrl: string;
 }
 
-export default function Item({hover = true, children}: ItemProps): React.ReactElement {
+export interface ItemProps extends IProduct {
+    hover?: boolean;
+}
+
+export default function Item({hover = true, id, name, description, photoUrl}: ItemProps): React.ReactElement {
     return <div className="product">
-        {hover ? <NavLink className="hover" to="/products/1"> 
+        {hover ? <NavLink className="hover" to={`/products/${id}`}> 
             <Block className="container">
                 <Button type={ButtonTypes.NEXT} />
-                <Title size={1} bold>Fishnet Chair</Title>
-                <P>Seat and back with upholstery made of cold cure foam.</P>
+                <Title size={1} bold>{name}</Title>
+                <P>{description}</P>
             </Block>
         </NavLink> : null}
-        <img className="image" src={children} />
+        <img className="image" src={photoUrl} />
     </div>;
 }

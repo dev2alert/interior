@@ -1,16 +1,6 @@
 .main {
-    display: flex;
-    justify-content: center;
-    width: 1366px;
     padding: 119px 0px;
-    margin: auto;
-    > :global(.container) {
-        width: 1100px;
-    }
-    > :global(.container > .bottom) {
+    > :global(.container > .container > .bottom) {
         margin-top: 64px;
-    }
-    :global {
-        
     }
 }

@@ -9,7 +9,7 @@ import Products from "../../common/Main/Section/Products";
 
 export default class TrendingProducts extends React.Component {
     public override render(): React.ReactElement {
-        return <Section className={styles.main}>
+        return <Section className={styles.main} container>
             <Block className="container">
                 <Flex
                     className="top"
@@ -17,17 +17,47 @@ export default class TrendingProducts extends React.Component {
                     alignItems="center"
                 >
                     <Title bold>Trending Products</Title>
-                    <ExploreAll />
+                    <ExploreAll to="/products" />
                 </Flex>
                 <div className="bottom">
                     <Products columns={3} itemSize={350}>
                         {[
-                            "/test/images/product-10.png",
-                            "/test/images/product-9.png",
-                            "/test/images/product-8.png",
-                            "/test/images/product-7.png",
-                            "/test/images/product-6.png",
-                            "/test/images/product-5.png"
+                            {
+                                id: 10,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-10.png"
+                            },
+                            {
+                                id: 9,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-9.png"
+                            },
+                            {
+                                id: 8,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-8.png"
+                            },
+                            {
+                                id: 7,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-7.png"
+                            },
+                            {
+                                id: 6,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-6.png"
+                            },
+                            {
+                                id: 5,
+                                name: "Fishnet Chair",
+                                description: "Seat and back with upholstery made of cold cure foam.",
+                                photoUrl: "/test/images/product-5.png"
+                            }
                         ]}
                     </Products>
                 </div>

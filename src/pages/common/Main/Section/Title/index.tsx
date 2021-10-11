@@ -7,9 +7,7 @@ export interface TitleProps {
 }
 
 export default function Title({children}: TitleProps): React.ReactElement {
-    return <Section className={styles.main}>
-        <div className="container">
-            {children}
-        </div>
+    return <Section className={styles.main} container>
+        {children}
     </Section>;
 }
