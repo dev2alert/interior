@@ -1,0 +1,69 @@
+.main {
+    > :global(.container) {
+        display: flex;
+        justify-content: space-between;
+        padding: 72px 0px;
+    }
+    > :global(.container > .left) {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+    > :global(.container > .right) {
+        width: 460px;
+    }
+    :global {
+        .photo {
+            width: 500px;
+            height: 500px;
+            cursor: move;
+        }
+        .select-photo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            > .item {
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                &.active {
+                    opacity: 0.5;
+                    cursor: default;
+                }
+            }
+        }
+        .name {
+            margin-bottom: 10px;
+        }
+        .name,
+        .subtitle {
+            text-align: center;
+        }
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font: normal 36px "Gotham Light";
+            margin-top: 26px;
+            > .bottom {
+                font-size: 26px;
+                opacity: 0.75;
+            }
+        }
+        .order-us {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #F44336;
+            color: white;
+            margin-top: 26px !important;
+            &:after {
+                width: 8px !important;
+                height: 12px !important;
+                background-image: url("./assets/order-us-arrow.png") !important;
+                background-size: cover;
+            }
+        }
+    }
+}

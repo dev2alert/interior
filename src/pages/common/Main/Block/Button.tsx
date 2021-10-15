@@ -6,16 +6,19 @@ export enum ButtonTypes {
 }
 
 export interface ButtonProps {
+    className?: string;
     type?: ButtonTypes;
     children?: string;
 }
 
-export default function Button({children, type = ButtonTypes.NONE}: ButtonProps): React.ReactElement {
+export default function Button({className, children, type = ButtonTypes.NONE}: ButtonProps): React.ReactElement {
     const classList: string[] = ["button"];
     switch(type) {
         case ButtonTypes.NEXT:
             classList.push(children ? "next" : "next-background");
         break;
     }
+    if(className)
+        classList.push(className);
     return <button className={classList.join(" ")}>{children}</button>;
 }

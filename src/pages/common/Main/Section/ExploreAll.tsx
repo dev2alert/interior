@@ -1,25 +1,14 @@
 import * as React from "react";
-import {withRouter, RouteComponentProps} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-export interface ExploreAllProps extends RouteComponentProps {
-    to?: string;
+export interface ExploreAllProps {
+    to: string;
 }
 
-class ExploreAll extends React.Component<ExploreAllProps> {
-    public handleClick(): void {
-        if(!this.props.to)
-            return;
-        this.props.history.push(this.props.to);
-    }
-
+export default class ExploreAll extends React.Component<ExploreAllProps> {
     public override render(): React.ReactElement {
-        return <button 
-            className="explore-all"
-            onClick={this.handleClick.bind(this)}    
-        >
+        return <NavLink className="explore-all" to={this.props.to}>
             Explore All
-        </button>;
+        </NavLink>;
     }
 }
-
-export default withRouter(ExploreAll);

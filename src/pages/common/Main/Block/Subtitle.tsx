@@ -7,15 +7,19 @@ export enum SubtitleColors {
 }
 
 export interface SubtitleProps {
+    className?: string;
     color?: SubtitleColors;
     children: string;
 }
 
-export default function Subtitle({children, color}: SubtitleProps): React.ReactElement {
+export default function Subtitle({className, children, color}: SubtitleProps): React.ReactElement {
     const style: any = {};
+    const classList: string[] = ["subtitle"];
     if(color)
         style["--color"] = color;
-    return <h2 className="subtitle" style={style}>
+    if(className)
+        classList.push(className);
+    return <h2 className={classList.join(" ")} style={style}>
         {children}
     </h2>;
 }

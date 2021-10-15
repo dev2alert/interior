@@ -43,6 +43,7 @@
         }
         .button {
             display: inline-flex;
+            align-items: center;
             padding: 16px 31px;
             border: none;
             background: white;
@@ -59,7 +60,8 @@
                     width: 8px;
                     height: 12px;
                     margin-left: 19px;
-                    content: url("./assets/button-next.png");
+                    background-image: url("./assets/button-next.png");
+                    content: "";
                 }
             }
             &.next-background {

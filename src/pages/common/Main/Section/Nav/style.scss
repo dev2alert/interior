@@ -1,0 +1,21 @@
+.main {
+    background: #F4F4F4;
+    > :global(.container) {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0px;
+        gap: 40px;
+    }
+    :global {
+        .link {
+            font: normal 18px "Montserrat Bold";
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #6C6C6C;
+            letter-spacing: 1px;
+            &.active {
+                color: #212121;
+            }
+        }
+    }    
+}

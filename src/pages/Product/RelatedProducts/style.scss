@@ -1,0 +1,8 @@
+.main {
+    > :global(.container) {
+        padding: 119px 0px;
+    }
+    > :global(.container > .top) {
+        margin-bottom: 64px;
+    }
+}
