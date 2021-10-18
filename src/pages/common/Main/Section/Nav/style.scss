@@ -11,10 +11,13 @@
             font: normal 18px "Montserrat Bold";
             text-decoration: none;
             text-transform: uppercase;
-            color: #6C6C6C;
+            color: #818181;
             letter-spacing: 1px;
+            &:hover {
+                color: #696969;
+            }
             &.active {
-                color: #212121;
+                color: #292929;
             }
         }
     }    

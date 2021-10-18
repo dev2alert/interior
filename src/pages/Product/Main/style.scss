@@ -44,7 +44,7 @@
             justify-content: center;
             align-items: flex-end;
             gap: 10px;
-            font: normal 36px "Gotham Light";
+            font: normal 45px "Gotham Light";
             margin-top: 26px;
             > .bottom {
                 font-size: 26px;
@@ -59,11 +59,16 @@
             color: white;
             margin-top: 26px !important;
             &:after {
-                width: 8px !important;
-                height: 12px !important;
+                width: 13px !important;
+                height: 20.31px !important;
                 background-image: url("./assets/order-us-arrow.png") !important;
                 background-size: cover;
             }
+        }
+        .description {
+            margin-top: 30px;
+            white-space: pre-wrap;
+            font-size: 15px;
         }
     }
 }

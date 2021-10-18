@@ -80,6 +80,10 @@
                         width: 22px;
                         height: 22px;
                         cursor: pointer;
+                        opacity: 0.85;
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -112,9 +116,9 @@
                 background-repeat: no-repeat;
                 background-size: 26px;
                 background-position: center;
-                opacity: 0.65;
+                opacity: 0.525;
                 &:hover {
-                    opacity: 0.75;
+                    opacity: 0.625;
                 }
                 &.facebook {
                     background-image: url("./Bottom/assets/social-facebook.png");

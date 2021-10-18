@@ -21,6 +21,7 @@
     }
     :global {
         .logo {
+            display: inline-flex;
             width: 185px;
             height: 22px;
             background: url("./assets/logo.png");
@@ -44,14 +45,58 @@
             }
         }
         .search {
-            display: inline-flex;
+            display: flex;
+            align-items: center;
             margin-left: 12px;
-            background: url("./assets/search.png");
-            width: 23px;
-            height: 23px;
-            border: none;
-            outline: none;
-            cursor: pointer;
+            > .input {
+                display: inline-flex;
+                align-items: center;
+                border-bottom: 2px solid #331b1b;
+                padding: 8px;
+                font: normal 14px "Montserrat Light";
+                &:before {
+                    display: inline-flex;
+                    width: 18px;
+                    height: 18px;
+                    background: url("./assets/search-input.png");
+                    background-size: 16px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 4px;
+                    content: "";
+                }
+                > .container {
+                    display: inline-flex;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 200px;
+                    &::-webkit-search-cancel-button {
+                        display: inline-flex;
+                        width: 10px;
+                        height: 10px;
+                        background: url("./assets/search-input-clear.png");
+                        background-size: 16px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        cursor: pointer;
+                        appearance: none;
+                    }
+                }
+            }
+            > .button {
+                display: inline-flex;
+                background: url("./assets/search.png");
+                margin-left: 12px;
+                width: 23px;
+                height: 23px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            > .hidden {
+                display: none;
+            }
         }
     }
 }

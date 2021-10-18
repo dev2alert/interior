@@ -4,6 +4,7 @@ import Block from "../../common/Main/Block";
 import Title from "../../common/Main/Block/Title";
 import Subtitle, {SubtitleColors} from "../../common/Main/Block/Subtitle";
 import Button, {ButtonTypes} from "../../common/Main/Block/Button";
+import P from "../../common/Main/Block/P";
 import style from "./style.scss";
 
 export interface IProduct {
@@ -37,9 +38,9 @@ export default function Main({photos, name, price, description}: MainProps): Rea
                 <span className="bottom">/sq</span>
             </div>
             <Button className="order-us" type={ButtonTypes.NEXT}>Order Us</Button>
-            <div className="description">
+            <P className="description">
                 {description}
-            </div>
+            </P>
         </Block>
     </Section>;
 }
