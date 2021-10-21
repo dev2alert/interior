@@ -14,14 +14,18 @@
             cursor: pointer;
             text-decoration: none;
             &:after {
+                position: relative;
+                left: -10px;
                 width: 8px;
                 height: 12px;
                 margin-left: 12px;
                 content: url("./assets/explore-all.png");
                 opacity: 0;
+                transition: all 0.5s;
             }
             &:hover {
                 &:after {
+                    left: 0px;
                     opacity: 1;
                 }
             }

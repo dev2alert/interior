@@ -81,6 +81,7 @@
                         height: 22px;
                         cursor: pointer;
                         opacity: 0.85;
+                        transition: opacity 0.5s;
                         &:hover {
                             opacity: 1;
                         }
@@ -117,6 +118,7 @@
                 background-size: 26px;
                 background-position: center;
                 opacity: 0.525;
+                transition: opacity 0.5s;
                 &:hover {
                     opacity: 0.625;
                 }

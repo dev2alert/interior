@@ -17,14 +17,16 @@ export interface ItemProps extends IProduct {
 }
 
 export default function Item({hover = true, id, name, description, photoUrl}: ItemProps): React.ReactElement {
-    return <div className="product">
-        {hover ? <NavLink className="hover" to={`/products/${id}`}> 
-            <Block className="container">
-                <Button type={ButtonTypes.NEXT} />
-                <Title size={1} bold>{name}</Title>
-                <P>{description}</P>
-            </Block>
-        </NavLink> : null}
-        <img className="image" src={photoUrl} />
-    </div>;
+    return <NavLink to={`/products/${id}`}>
+        <div className="product">
+            {hover ? <div className="hover">
+                <Block className="container">
+                    <Button type={ButtonTypes.NEXT} />
+                    <Title size={1} bold>{name}</Title>
+                    <P>{description}</P>
+                </Block>
+            </div> : null}
+            <img className="image" src={photoUrl} />
+        </div>
+    </NavLink>;
 }

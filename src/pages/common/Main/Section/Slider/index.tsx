@@ -4,7 +4,6 @@ import * as React from "react";
 import SlickSlider from "react-slick";
 import Section from "..";
 import styles from "./style.scss";
-import Dots from "./Dots";
 
 export interface SliderProps {
     backgroundUrl?: string;

@@ -10,11 +10,11 @@
             cursor: pointer;
             &:hover {
                 > .hover > .container {
-                    display: flex;
+                    transform: none;
                 }
             }
             > .hover > .container {
-                display: none;
+                display: flex;
                 width: $image-size;
                 height: $image-size;
                 position: absolute;
@@ -24,6 +24,9 @@
                 align-items: center;
                 border: 1px solid #b1b0b0;
                 background: rgba(255, 255, 255, 0.8);
+                transform: rotateX(90deg);
+                transform-origin: bottom;
+                transition: transform 0.8s;
                 > .button {
                     margin-top: 10px;
                 }

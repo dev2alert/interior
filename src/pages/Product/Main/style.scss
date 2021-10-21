@@ -13,22 +13,25 @@
         width: 460px;
     }
     :global {
-        .photo {
+        .photo-slider {
             width: 500px;
-            height: 500px;
-            cursor: move;
-        }
-        .select-photo {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            > .item {
-                width: 70px;
-                height: 70px;
-                cursor: pointer;
-                &.active {
-                    opacity: 0.5;
-                    cursor: default;
+            height: 570px;
+            .slick-dots {
+                display: flex !important;
+                justify-content: center;
+                gap: 10px;
+                > li {
+                    display: inline-flex; 
+                    width: 70px;
+                    height: 70px;
+                    margin: 0px;
+                    &.slick-active {
+                        opacity: 0.5;
+                    }
+                    .photo {
+                        width: inherit;
+                        height: inherit;
+                    }
                 }
             }
         }

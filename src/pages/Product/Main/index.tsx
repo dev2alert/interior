@@ -6,6 +6,7 @@ import Subtitle, {SubtitleColors} from "../../common/Main/Block/Subtitle";
 import Button, {ButtonTypes} from "../../common/Main/Block/Button";
 import P from "../../common/Main/Block/P";
 import style from "./style.scss";
+import PhotoSlider from "./PhotoSlider";
 
 export interface IProduct {
     name: string;
@@ -19,15 +20,7 @@ export interface MainProps extends IProduct {}
 export default function Main({photos, name, price, description}: MainProps): React.ReactElement {
     return <Section className={style.main} container>
         <div className="left">
-            <img className="photo" src={photos[0]} />
-            <div className="select-photo">
-                {photos.map((photo, index) => {
-                    const classList: string[] = ["item"];
-                    if(index === 0)
-                        classList.push("active");
-                    return <img key={index} className={classList.join(" ")} src={photo} />;
-                })}
-            </div>
+            <PhotoSlider>{photos}</PhotoSlider>
         </div>
         <Block className="right">
             <Title className="name" bold>{name}</Title>
