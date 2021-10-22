@@ -22,7 +22,6 @@ export default class App extends React.Component {
                     <Route path="/products" component={Products} exact />
                     <Route path="/products/:id" component={Product} exact />
                     <Route path="/contact" component={Contact} exact />
-                    <Route path="/history" component={Loading} exact />
                     <Route component={NotFound} />
                 </Switch>
             </React.Suspense>

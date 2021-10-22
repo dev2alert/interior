@@ -11,6 +11,7 @@
             &:hover {
                 > .hover > .container {
                     transform: none;
+                    opacity: 1;
                 }
             }
             > .hover > .container {
@@ -26,7 +27,8 @@
                 background: rgba(255, 255, 255, 0.8);
                 transform: rotateX(90deg);
                 transform-origin: bottom;
-                transition: transform 0.8s;
+                opacity: 0;
+                transition: all 0.8s ease;
                 > .button {
                     margin-top: 10px;
                 }

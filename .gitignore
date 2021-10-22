@@ -1,4 +1,3 @@
 /node_modules
 /dist/assets/*
 !/dist/assets/.gitkeep
-!/dist/images/*
